@@ -70,7 +70,7 @@
   width: 165px;
   @extend %center;
   margin-top: 22px;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 .section-reserver{
   display: flex;
@@ -78,6 +78,29 @@
   align-items: center;
   text-align: center;
   background-color:#f6f6f6;
+  div{
+    padding-top: 16px;
+    padding-bottom: 17px;
+    background-color: #eaeaea;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 45px;
+    width: 100%;
+    box-shadow: 0 -3px 0 #d5d5d5;
+  }
+  h2{
+    margin-bottom: 18px;
+    }
+  .discovery{
+    margin-bottom: 30px;
+    font-weight: lighter;
+  }
+  button{
+    margin-bottom: 55px;
+    font-size: 13px;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
 }
 
 button:hover{
@@ -90,10 +113,16 @@ button:hover{
   color:#ffff;
   background-image:linear-gradient(to bottom right,$color-rose ,$color-mauve);
   border-radius: 25px;
-  @extend %center
+  @extend %center;
+  padding-left: 43px;
+  padding-right: 43px;
 }
 .section-fonctionnement{
   margin-left: 20px;
+  h2{
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
 }
 .btn-fonction{
   @extend %center;
@@ -102,10 +131,39 @@ button:hover{
   border-radius: 25px;
   background-color: #f6f6f6;
   font-weight: bold;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  font-size: 14px;
+  div{
+    height: 25px; 
+		width: 25px; 
+		background-color: #9356dc;
+    color:#FFFFFF;
+	  border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: lighter;
+    font-size: 13px;
+    margin-left: -20px;
+    margin-right: 22px;
+  }
+  i{
+    margin-right: 25px;
+  }
+  .fa-mobile-alt{
+    margin-right: 32px;
+  }
 }
 .btn-fonction:hover{
+  background-color: #f5edff;
   animation: apparition 2s;
 }
+.btn-fonction>i:hover{
+  color: #9356dc;
+}
+
 @keyframes apparition{
   0% {opacity: 0;}
   100% {opacity: 1;}
@@ -113,15 +171,71 @@ button:hover{
 
 .section-restaurant{
   background-color: #f6f6f6;
-  margin-left: 18px;
-  margin-right: 18px;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-top: 65px;
+  h2{
+    padding-top: 57px;
+    padding-bottom: 27px;
+  }
 }
-.image{
-  height: 250px;
-  width: 100%;
-  margin-bottom: 16px;
+
+.container_image{
   border-radius: 20px;
+  background-color: #ffffff;
+  position: relative;
+  .image{
+    height: 175px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+  }
+  h4{
+    margin-left: 15px;
+  }
+  p{
+    margin-left: 15px;
+  }
+  .rectangle_vert{
+    width:80px;
+    height:30px;
+    background:#99e2d0;
+    color:#008766;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 13px;
+    right:12px;
+  }
 }
+
+.coeurempli{
+  width: 30px;
+  position: relative;
+}
+.iconeheart{
+  width: 20px;
+}
+.iconeheart path{
+  fill: transparent;
+  stroke-width: 30px;
+  stroke: black;
+}
+
+.iconeheart:hover path{
+  fill:(red);
+  stroke: red;
+  animation: red-heart 2s linear ;
+}
+@keyframes red-heart{
+  0%{opacity: 0;}
+  25%{opacity:0.20}
+  50%{opacity: 0.50;}
+  75%{opacity: 0.75;}
+  100%{opacity: 1;}
+}
+
 .fa-heart{
   background: linear-gradient(to left, #0943A7 50%, #FFFFFF 50%);
   background-size: 200% 100%;
@@ -133,7 +247,6 @@ button:hover{
 .fa-heart:hover{
   background-position: right bottom;
 }
-
 
 footer{
   background-color:#353535;
@@ -150,18 +263,56 @@ footer{
   p{
     margin-bottom: 10px;
     }
+  i{
+    margin-right: 12px;
+  }
   }
 .container_footer>a{
   color: #ffff;
   text-decoration: none;
 }
 
-
-
-
-
-
-
+/*Partie des pages de selection restaurant*/
+.container_btn_restaurant{
+  display: flex;
+  flex-direction: column;
+}
+.container_header{
+  display: flex;
+  align-items: center;
+}
+.fa-arrow-left{
+  margin-left: 23px;
+}
+.selection{
+  background-color: #f6f6f6;
+  padding-left: 14px;
+  padding-right: 12px;
+  border-radius: 20px 20px 0 0;
+  button{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    /*display: flex;
+    flex-direction: column;*/
+  }
+}
+.container_titre_coeur{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.selection>p{
+  text-transform:uppercase;
+  margin-bottom: 8px;
+}
+hr{
+  width: 40px;
+  height: 3px;
+  background-color: #99e2d0;
+  border: none;
+  margin-bottom: 15px;
+}
 /*# sourceMappingURL=style.css.map */
 
 
