@@ -1,0 +1,31 @@
+.coeurempli{
+    width: 30px;
+    position: relative;
+}
+.iconeheart_mauve:hover path{
+    fill:#c165db;
+    stroke: #c165db;
+    animation: red-heart 1s linear ;
+}
+.iconeheart{
+    width: 20px;
+    cursor: pointer;
+}
+.iconeheart path{
+    fill: transparent;
+    stroke-width: 30px;
+    stroke: black;
+}
+.iconeheart:hover path{
+    fill:(red);
+    stroke: red;
+    animation: red-heart 2s linear ;
+}
+@keyframes red-heart{
+    0%{opacity: 0;}
+    25%{opacity:0.20}
+    50%{opacity: 0.50;}
+    75%{opacity: 0.75;}
+    100%{opacity: 1;}
+}
+  

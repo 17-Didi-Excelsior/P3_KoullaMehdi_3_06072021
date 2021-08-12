@@ -1,0 +1,138 @@
+.container_btn_restaurant{
+    display: flex;
+    flex-direction: column;
+    p{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding: 0 20px 10px 10px;
+    }
+    h3{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding : 13px 0 10px 10px
+    }
+    button{
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      border:none;
+      display: flex;
+      justify-content: flex-start;
+    }
+    .select{
+      border-radius: 13px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      border:none;
+      height: auto;
+      background-color: #ffffff;
+      cursor: pointer;
+      width: 100%;
+    }
+    .select:hover{
+      background-color: #f5edff;
+      animation: apparition 2s;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      border: none;
+    }
+    .tomove{
+      width: 0;
+    }
+}
+  
+button:hover{
+  opacity: 0.8;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+  
+.beta{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+    width: 80%;
+    opacity: 0;
+
+  .tomove{
+    opacity: 0;
+  }
+  p, h3{
+      overflow-x: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+  }
+}
+
+.beta:hover{
+  .tomove{
+      opacity: 1;
+      background-color: #99e2d0;
+      transition-duration: 2s;
+      transform:translateX(-1%);
+      height: 100%;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation-iteration-count: 1;
+      animation: valider 0.5s forwards;
+      position: absolute;
+      border-radius: 0 13px 13px 0;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+  .select{
+    animation: ani 0.5s forwards;
+    border-radius: 13px 0 0 13px;
+  }
+  i{
+      margin-right: 0;
+      padding-right: 0;
+      transform: rotate(360deg);
+      transition-duration: 1s;
+      animation-iteration-count: 1;
+      color: #ffffff;
+      
+  }
+}
+@keyframes valider{
+  0%{
+      width: 0px;
+  }
+  100%{
+      width: 50px;
+  }
+}
+@keyframes ani{
+  0%{
+      width: 100%;
+  }
+  100%{
+      width:calc(100% - 50px);
+  }
+}
+
+
+/* Animation cascade */
+@for $i from 1 to 5 {
+  div.container_btn_restaurant > div.beta:nth-child( #{$i} ) {
+    animation: cascade 2s forwards;
+    animation-delay: $i*0.5s;
+  }
+}
+
+
+@keyframes cascade {
+  0% {
+    margin-left: 20%;
+    opacity: 0;
+  }
+  80% {
+    margin-left: 5%;
+  }
+  100% {
+    margin-left: 10%;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,58 @@
+.container_image{
+    border-radius: 20px;
+    background-color: #ffffff;
+    position: relative;
+    margin-bottom: 16px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    .image{
+      height: 175px;
+      width: 100%;
+      border-radius: 20px 20px 0 0;
+      object-fit: cover;
+    }
+    h4{
+      margin-left: 15px;
+    }
+    p{
+      margin-left: 15px;
+      padding-bottom: 20px;
+    }
+    .coeurempli_mauve{
+      width: 30px;
+      position: relative;
+      padding-top: 15px;
+      padding-right: 10px;
+    }
+    .iconeheart_mauve{
+      width: 20px;
+      cursor: pointer;
+    }
+    .iconeheart_mauve path{
+      fill: transparent;
+      stroke-width: 30px;
+      stroke: black;
+    }
+    .rectangle_vert{
+      width:80px;
+      height:30px;
+      background:#99e2d0;
+      color:#008766;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 13px;
+      right:12px;
+    }
+    .container_alignetitrecoeur{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+    }
+  
+  }
+  

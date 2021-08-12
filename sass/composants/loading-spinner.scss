@@ -1,0 +1,53 @@
+
+#spinner-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 200px;
+    background-color: rgba(218, 218, 218, 1);
+    z-index: -99;
+    opacity: 0;
+    animation: fade-out 1s linear;
+  }
+  @keyframes fade-out {
+    0% {
+      z-index: 99;
+      opacity: 1;
+    }
+    99% {
+      z-index: 99;
+      opacity: 1;
+    }
+    100% {
+      z-index: -99;
+      opacity: 0;
+    }
+  }
+  
+  .loadingelement{
+    font-family: 'Shrikhand', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .loadingspinner{
+    border-top: solid 10px #9b59b6;
+    border-bottom: solid 10px #e67e22;
+    border-right: solid 10px #1abc9c;
+    border-left: solid 10px #f1c40f;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: loadohmyfood 1s linear infinite;
+  }
+  
+  @keyframes loadohmyfood{
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+  
