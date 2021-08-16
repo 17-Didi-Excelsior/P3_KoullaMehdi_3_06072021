@@ -19,7 +19,7 @@
       margin-bottom: 18px;
       }
     .discovery{
-      margin-bottom: 30px;
+      margin: 0 23px 30px 30px;
       font-weight: lighter;
     }
     button{
@@ -62,7 +62,7 @@
 
 .selection{
     background-color: #f6f6f6;
-    padding : 0 12px 1px 14px;
+    padding : 0 12px 40px 14px;
     border-radius: 20px 20px 0 0;
 
     button{
@@ -81,6 +81,10 @@
     .align_aliments_prix{
       display: flex;
       justify-content: space-between;
+    }
+    .taille-text{
+      font-size: 15px;
+      margin-top: 30px;
     }
 }
 

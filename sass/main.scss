@@ -1,4 +1,3 @@
-@import"./base/animation.scss";
 
 @import "./base/general.scss";
 @import "./layout/header.scss";
@@ -16,14 +15,21 @@
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
  /*Tablette*/
- .container_btn_restaurant{
-   .select{
-      width: 450px;
-      margin-right: auto;
-      margin-left: auto;
-      border-radius: 50px;
-    }
- }
+  .section-fonctionnement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-restaurant h2{
+    display: flex;
+    justify-content: center;
+  }
+  .image_navigation{
+    height: auto;
+  }
+  .iconeheart{
+    width: 35px;
+  }
   .container_footer{
     display: flex;
     justify-content: center;
@@ -31,17 +37,75 @@
     margin-left: 0;
   }
   .selection{
+    .container_titre_coeur{
+      justify-content: space-around;
+    }
     p{
       display: flex;
       justify-content: center;
     }
     hr{
-      margin: auto;
+      margin: 0 auto 15px auto;
     }
     button{
       margin-top: 15px;
     }
   }
+  .container_image{
+    .image {
+      height: 350px;
+    }
+    .iconeheart_mauve{
+      width: 35px;
+    }
+  } 
+  
+}
+@media screen and (min-width: 769px) and (max-width: 1450px){
+  .section-fonctionnement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-restaurant h2{
+    display: flex;
+    justify-content: center;
+  }
+  .image_navigation{
+    height: auto;
+  }
+  .iconeheart{
+    width: 35px;
+  }
+  .container_footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
+  .selection{
+    .container_titre_coeur{
+      justify-content: space-around;
+    }
+    p{
+      display: flex;
+      justify-content: center;
+    }
+    hr{
+      margin: 0 auto 15px auto;
+    }
+    button{
+      margin-top: 15px;
+    }
+  }
+  .container_image{
+    .image {
+      height: 500px;
+    }
+    .iconeheart_mauve{
+      width: 35px;
+    }
+  } 
 }
 
 
