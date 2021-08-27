@@ -293,6 +293,10 @@ footer {
   white-space: nowrap;
   width: auto;
 }
+.section-reserver .btn-accueil p {
+  display: flex;
+  align-items: center;
+}
 
 .section-fonctionnement {
   margin-left: 20px;
@@ -306,6 +310,10 @@ footer {
   align-items: center;
   margin-right: auto;
   margin-left: auto;
+}
+.section-fonctionnement .btn-align {
+  display: flex;
+  align-items: center;
 }
 
 .section-restaurant {

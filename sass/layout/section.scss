@@ -33,6 +33,10 @@
       justify-content: center;
       white-space: nowrap;
       width: auto;  
+      p{
+        display: flex;
+        align-items: center;
+      }
     }
 }
   
@@ -47,6 +51,10 @@
       align-items: center;
       margin-right: auto;
       margin-left: auto;
+    }
+    .btn-align{
+      display: flex;
+      align-items: center;
     }
 }
 
